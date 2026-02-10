@@ -1,2 +1,18 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --color-primary: #ff0055;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body { @apply bg-[#fcfcfc] text-neutral-900 antialiased; }
+}
+
+@layer components {
+  .btn-moda {
+    @apply h-12 px-6 rounded-full font-black uppercase tracking-tighter transition-all 
+           active:scale-95 flex items-center justify-center gap-2 cursor-pointer;
+  }
+}
